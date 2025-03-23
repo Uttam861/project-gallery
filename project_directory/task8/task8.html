@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #abc{
+            display: inline-block;
+            width: 20rem;
+            height: 3rem;
+        }
+        #bch{
+            display: inline-block;
+            width: 20rem;
+            height: 3rem;
+        }
+    </style>
+    <script>
+        function Case() {
+            var x = document.getElementById("abc");
+            var y = document.getElementById("bch");
+            y.value = x.value.toUpperCase();
+        }
+    </script>
+
+</head>
+<body>
+   
+    <input type="text" placeholder="Uttam" id="abc" onkeyup="Case()">
+    <input type="text" placeholder="UTTAM" id="bch" disabled><br><br>
+</body>
+</html>

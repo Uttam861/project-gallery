@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vehicle Inventory Portal</title>
+  <link rel="stylesheet" href="task 14 .css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Vehicle Inventory Portal</h1>
+
+    <div class="form-inputs">
+      <input type="text" id="vehicleName" placeholder="Vehicle Name" />
+      <input type="text" id="vehicleBrand" placeholder="Brand" />
+      <input type="text" id="vehicleYear" placeholder="Model Year" />
+      <input type="text" id="vehiclePlate" placeholder="License Plate" />
+      <input type="text" id="vehicleColor" placeholder="Color" />
+      <input type="text" id="vehicleOwner" placeholder="Owner Name" />
+    </div>
+
+    <div class="actions">
+      <button class="btn add" onclick="addVehicle()">Add</button>
+      <button class="btn clear" onclick="resetForm()">Clear Form</button>
+      <button class="btn add" onclick="showVehicles()">Show All</button>
+      <button class="btn clear" onclick="clearList()">Clear List</button>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="searchVehicle" placeholder="Search by Vehicle Name" />
+      <button onclick="searchVehicle()">Search</button>
+    </div>
+
+    <div id="vehicleList"></div>
+  </div>
+
+  <script src="task 14.js"></script>
+</body>
+</html>

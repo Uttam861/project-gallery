@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 1: Expectation Document</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #fff;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 200px;
+      background-color: #f8f8f8;
+      border-right: 1px solid #ddd;
+      padding: 20px 10px;
+    }
+
+    .sidebar h4 {
+      margin-top: 0;
+      font-size: 13px;
+      color: #333;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #d32222;
+      font-size: 14px;
+      padding: 8px 0;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content */
+    .main {
+      flex-grow: 1;
+      padding: 30px;
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .due {
+      font-size: 14px;
+      margin: 5px 0 15px;
+    }
+
+    .score-box {
+      text-align: right;
+    }
+
+    .score-box .points {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .score-box .comment-btn {
+      margin-top: 8px;
+      padding: 5px 10px;
+      font-size: 13px;
+      border: 1px solid #aaa;
+      background: #f0f0f0;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .attempt-row {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .attempt-row select {
+      padding: 4px 8px;
+      font-size: 14px;
+    }
+
+    .feedback {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: green;
+    }
+
+    .green-dot {
+      width: 16px;
+      height: 16px;
+      background-color: green;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+
+    .unlimited {
+      margin-top: 25px;
+      font-weight: bold;
+    }
+
+    .details {
+      border-left: 4px solid #ccc;
+      padding-left: 15px;
+      margin-top: 15px;
+    }
+
+    .details ul {
+      padding-left: 20px;
+    }
+
+    .details strong {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .gray-box {
+      background-color: #f6f8f9;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 30px;
+    }
+
+    .gray-box p {
+      margin: 10px 0;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 40px;
+      padding-bottom: 30px;
+    }
+
+    .footer button {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .divider {
+      border-bottom: 1px solid #ccc;
+      margin-top: 15px;
+    }
+
+    .info-small {
+      font-size: 13px;
+      color: #555;
+      margin-top: 5px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h4>Spring 2025 Full Term</h4>
+      <a href="#">Home</a>
+      <a href="#">Announcements</a>
+      <a href="#">Syllabus</a>
+      <a href="#">Modules</a>
+      <a href="#"><strong>Assignments</strong></a>
+      <a href="#">Quizzes</a>
+      <a href="#">Discussions</a>
+      <a href="#">Grades <span style="color: black;">● 9</span></a>
+      <a href="#">People</a>
+      <a href="#">Office 365</a>
+      <a href="#">Kaltura Course Gallery</a>
+      <a href="#">RedShelf Course Materials</a>
+      <a href="#">Lucid (Whiteboard)</a>
+      <a href="#">Class Notebook</a>
+      <a href="#">ATI</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <div class="top-row">
+        <div>
+          <div class="title">Task 1: Expectation Document</div>
+          <div class="due"><strong>Due:</strong> Fri Jan 17, 2025 11:59pm</div>
+
+          <div class="attempt-row">
+            <select>
+              <option>Attempt 1</option>
+            </select>
+            <div class="feedback">
+              <div class="green-dot"></div>
+              Review Feedback &nbsp;
+              <span style="color: green;">SUBMITTED: Jan 17, 2025 11:25pm</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="score-box">
+          <div class="points">10/10 Points</div>
+          <div class="info-small">Attempt 1 Score: 10/10</div>
+          <button class="comment-btn">Add Comment</button>
+          <div class="info-small" style="margin-top: 8px;">Anonymous Grading: <strong>no</strong></div>
+        </div>
+      </div>
+
+      <div class="unlimited">Unlimited Attempts Allowed</div>
+      <div class="info-small">Available until Feb 8, 2025 11:59pm</div>
+
+      <div class="details">
+        <h3>Details</h3>
+        <p>Write an essay on your expectations from this course. It can include but is not limited to the following:</p>
+        <ul>
+          <li>Why do you want to take this course?</li>
+          <li>What do you aim to learn by the end of this course?</li>
+          <li>How do you think this course will benefit you in your future goals?</li>
+          <li>List any specific tools you want to learn (like Tailwind or React etc.)</li>
+        </ul>
+        <strong>Submit by 11:59 PM Friday, January 17, 2025</strong>
+      </div>
+
+      <div class="gray-box">
+        <p><strong>1:</strong><br>I am interested in this subject because it will help me in the future.</p>
+        <p><strong>2:</strong><br>I want to cover all the basics and gain a strong understanding of the subject.</p>
+        <p><strong>3:</strong><br>This course will help me work in front-end development in the future.</p>
+        <p><strong>4:</strong><br>I want to learn React.</p>
+      </div>
+
+      <div class="footer">
+        <button>Next ></button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

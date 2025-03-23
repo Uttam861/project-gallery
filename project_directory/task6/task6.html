@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas Assignment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    .top-bar {
+      background-color: #f5f5f5;
+      padding: 8px 16px;
+      font-size: 14px;
+      color: #555;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+    .top-bar .right-icons i {
+      margin-left: 12px;
+      color: #666;
+    }
+    .top-bar .right-icons button {
+      background-color: #edf2fa;
+      border: 1px solid #ccc;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #fff;
+      border-right: 1px solid #ddd;
+      padding: 20px 10px;
+      height: 100vh;
+    }
+
+    .sidebar h4 {
+      margin-top: 0;
+      font-size: 13px;
+      color: #333;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #cc0000;
+      text-decoration: none;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .sidebar a strong {
+      font-weight: bold;
+    }
+
+    .main {
+      flex: 1;
+      padding: 30px 40px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .header .left h2 {
+      margin: 0 0 5px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .header .left .status {
+      background-color: #eafaf1;
+      color: #107c41;
+      padding: 6px 12px;
+      border-radius: 16px;
+      font-weight: bold;
+      font-size: 13px;
+      display: inline-block;
+    }
+
+    .header .right {
+      text-align: right;
+    }
+
+    .header .right .attempt-box {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .header .right button {
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 6px 10px;
+      font-size: 13px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .attempt-select {
+      font-size: 14px;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    .details {
+      margin-top: 30px;
+      font-size: 15px;
+    }
+
+    .details h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .details ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .details li {
+      margin-bottom: 10px;
+    }
+
+    .details ul ul {
+      list-style-type: circle;
+      padding-left: 20px;
+    }
+
+    .details a {
+      color: #cc0000;
+      text-decoration: underline;
+    }
+
+    .code-box {
+      background-color: #f3f3f3;
+      border-top: 3px solid #ccc;
+      padding: 14px;
+      margin-top: 20px;
+      font-family: monospace;
+      font-size: 16px;
+    }
+
+    .footer-nav {
+      margin-top: 40px;
+      text-align: right;
+    }
+
+    .footer-nav button {
+      background: #f3f3f3;
+      border: 1px solid #ccc;
+      padding: 8px 14px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .pdf-icon {
+      margin-left: 4px;
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div>
+      aum.instructure.com/courses/5279/assignments/89787
+    </div>
+    <div class="right-icons">
+      <i class="fa-solid fa-lock"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-circle-user"></i>
+      <button>Finish update</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <h4>Spring 2025 Full Term</h4>
+      <a href="#">Home</a>
+      <a href="#">Announcements</a>
+      <a href="#">Syllabus</a>
+      <a href="#">Modules</a>
+      <a href="#"><strong>Assignments</strong></a>
+      <a href="#">Quizzes</a>
+      <a href="#">Discussions</a>
+      <a href="#">Grades</a>
+      <a href="#">People</a>
+      <a href="#">Office 365</a>
+      <a href="#">Kaltura Course Gallery</a>
+      <a href="#">RedShelf Course Materials</a>
+      <a href="#">Lucid (Whiteboard)</a>
+      <a href="#">Class Notebook</a>
+      <a href="#">ATI</a>
+    </div>
+
+    <div class="main">
+      <div class="header">
+        <div class="left">
+          <select class="attempt-select">
+            <option>Attempt 1</option>
+          </select>
+          <h2>Review Feedback</h2>
+          <div class="status">SUBMITTED: Feb 7, 2025 11:54pm</div>
+        </div>
+        <div class="right">
+          <div class="attempt-box">Attempt 1 Score: <strong>20/20</strong></div>
+          <button>Add Comment</button>
+        </div>
+      </div>
+
+      <div class="details">
+        <p><strong>Unlimited Attempts Allowed</strong><br>
+        Available until Feb 14, 2025 11:59pm</p>
+
+        <h3>Details</h3>
+        <p>In this assignment, you will demonstrate that you have completed the initial GitHub account setup. You can leverage the slides to complete the task:
+          <a href="#">week2_version_control.pdf <i class="fa-solid fa-download pdf-icon"></i></a>
+        </p>
+
+        <p>You will need to complete the following in this task to get the full credits:</p>
+        <ul>
+          <li>Create and setup your GitHub account</li>
+          <li>Create a new repository for the class assignments in this course
+            <ul>
+              <li>Either create a public repository or</li>
+              <li>Collaborate with <a href="#">https://github.com/aum-web-app</a></li>
+            </ul>
+          </li>
+          <li><strong>Pull</strong> the repository to your local machine</li>
+          <li>Create a branch for Task 5: Calculator assignment</li>
+          <li>Checkout to the newly created branch</li>
+          <li>Copy <strong>Task 5 (Calculator)</strong> files in your local repository</li>
+          <li>Stage all changes</li>
+          <li>Push changes to remote with appropriate commit message</li>
+          <li>Make pull request and accept merge request</li>
+          <li>Submit your <strong>repository URL</strong> and <strong>commit ID (Task 5 merge)</strong> in Canvas</li>
+          <li>Checkout to the master branch</li>
+        </ul>
+
+        <div class="code-box">
+          https://github.com/Uttam861/uthokala.git<br><br>
+          pull request token: <strong>7446a1e</strong>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <button>&lt; Previous</button>
+        <button>Next &gt;</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

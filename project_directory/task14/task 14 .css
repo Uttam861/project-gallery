@@ -1,0 +1,109 @@
+/* Reset default margins and box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  /* Main container box */
+  .container {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields */
+  .form-inputs input,
+  .search-bar input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1.5px solid #ccc;
+    font-size: 15px;
+  }
+  
+  /* Button section */
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    flex: 1;
+    padding: 12px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  /* Green (Add / Show All) */
+  .btn.add {
+    background-color: #28a745;
+  }
+  .btn.add:hover {
+    background-color: #218838;
+  }
+  
+  /* Red (Clear) */
+  .btn.clear {
+    background-color: #dc3545;
+  }
+  .btn.clear:hover {
+    background-color: #c82333;
+  }
+  
+  /* Search input and button */
+  .search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Output display area */
+  #vehicleList {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333;
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Triangle Generator</title>
+    <link rel="stylesheet" href="stars.css">
+</head>
+<body>
+
+    <h1>Star Triangle Generator</h1>
+    <input 
+        type="number" 
+        id="numInput" 
+        placeholder="Enter a number (1 - 100)" 
+        min="1" 
+        max="100" 
+        oninput="generateStars()"
+    >
+    
+    <div class="stars" id="output"></div>
+
+    <script>
+        function generateStars() {
+            const n = parseInt(document.getElementById('numInput').value);
+            let output = "";
+
+            if (!isNaN(n) && n > 0 && n <= 100) {
+                for (let i = 1; i <= n; i++) {
+                    output += "* ".repeat(i).trim() + "\n";
+                }
+            }
+
+            document.getElementById('output').innerText = output;
+        }
+    </script>
+    
+</body>
+</html>
